@@ -1,0 +1,42 @@
+{
+  "name": "defi-micro-lending-dapp",
+  "version": "1.0.0",
+  "description": "Decentralized Peer-to-Peer Micro-Lending DApp with smart contracts and React frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "test:coverage": "hardhat coverage",
+    "compile": "hardhat compile",
+    "deploy:local": "hardhat run scripts/deploy.js --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "deploy:verify": "hardhat run scripts/deploy.js --network sepolia && hardhat verify --network sepolia",
+    "test:lifecycle": "hardhat run scripts/test-loan-lifecycle.js --network localhost",
+    "node": "hardhat node",
+    "clean": "hardhat clean",
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "frontend:serve": "cd frontend && npm run serve"
+  },
+  "keywords": [
+    "defi",
+    "lending",
+    "ethereum",
+    "smart-contracts",
+    "react",
+    "hardhat",
+    "solidity"
+  ],
+  "author": "DeFi Developer",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "dotenv": "^16.3.1",
+    "hardhat": "^2.26.3"
+  },
+  "dependencies": {
+    "ethers": "^6.8.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
+}
