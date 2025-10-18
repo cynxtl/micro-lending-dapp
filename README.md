@@ -2,7 +2,7 @@
 
 A decentralized peer-to-peer micro-lending platform built on Ethereum with Solidity smart contracts (Hardhat) and a modern React + Vite frontend using Ethers.js v6.
 
-## 🚀 Features
+## Features
 
 - **Smart Contract Based**: Lending lifecycle enforced by immutable smart contracts
 - **Collateral Management**: ETH-based collateral escrow in factory for security
@@ -12,7 +12,7 @@ A decentralized peer-to-peer micro-lending platform built on Ethereum with Solid
 - **MetaMask Integration**: Seamless wallet connection and transaction signing
 - **Simple UX**: Manual refresh in marketplace; details auto-refresh after actions
 
-## 🏗️ Architecture
+## Architecture
 
 ### Smart Contracts
 
@@ -25,14 +25,14 @@ A decentralized peer-to-peer micro-lending platform built on Ethereum with Solid
 - **Ethers.js v6**: Contract interaction and signing
 - **MetaMask**: Wallet integration for transaction signing
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Node.js 18+
 - MetaMask browser extension
 - Sepolia testnet ETH (for testnet runs)
 - Git
 
-## 🔐 Wallet Setup & Testing Accounts
+## Wallet Setup & Testing Accounts
 
 ### MetaMask Installation
 - Install the MetaMask browser extension and create a new wallet (or use an existing one on a non-production network).
@@ -141,7 +141,7 @@ A decentralized peer-to-peer micro-lending platform built on Ethereum with Solid
      VITE_LOAN_FACTORY_ADDRESS=0x5FbDB2315678afecb367f032d93F642f64180aa3
      ```
 
-## 🧪 Testing
+## Testing
 
 ### Run Hardhat Tests
 ```bash
@@ -153,7 +153,7 @@ npm test
 npm run test:coverage
 ```
 
-## 🚀 Deployment
+## Deployment
 
 ### Local Development (Smart Contracts + Frontend)
 ```bash
@@ -179,7 +179,7 @@ npm run deploy:sepolia
 npm run deploy:verify
 ```
 
-## 🎯 Usage Examples
+## Usage Examples
 
 ### 1. Create a Loan Request
 
@@ -213,7 +213,7 @@ npm run deploy:verify
 3. Confirm liquidation
 4. Collateral is transferred to lender via factory liquidation
 
-## 🔒 Security Features
+## Security Features
 
 - **Reentrancy Protection**: `ReentrancyGuard` on external state-changing functions
 - **Access Control**: Role checks (borrower/lender) and `Ownable` controls
@@ -230,13 +230,13 @@ npm run deploy:verify
 | **Repaid** | Loan completed successfully | None |
 | **Defaulted** | Loan overdue, collateral seized | None |
 
-## 🌐 Network Support
+## Network Support
 
 - **Localhost**: Development and testing
 - **Sepolia**: Testnet deployment
 - **Mainnet**: Production deployment (update configuration)
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ├── contracts/                 # Smart contracts
@@ -262,7 +262,7 @@ npm run deploy:verify
 └── README.md               # This file
 ```
 
-## 🔧 Configuration
+## Configuration
 
 ### Hardhat Configuration
 - Solidity 0.8.20 with optimizer enabled (runs: 200)
@@ -275,14 +275,14 @@ npm run deploy:verify
 - Marketplace supports manual refresh; details view refreshes after actions
 - Due dates displayed in UTC to avoid timezone discrepancies
 
-## 🚨 Important Notes
+## Important Notes
 
 - **Testnet Only**: This is an MVP for testing purposes
 - **ETH Collateral**: Uses ETH as collateral for simplicity
 - **No Insurance**: No protection against smart contract bugs
 - **Gas Costs**: All transactions require ETH for gas fees
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -317,7 +317,7 @@ npm run clean
 npm run node
 ```
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -325,22 +325,22 @@ npm run node
 4. Add tests for new functionality
 5. Submit a pull request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This software is provided "as is" without warranty of any kind. Use at your own risk. This is experimental software and should not be used for production purposes without thorough testing and security audits.
 
-## 🔗 Links
+## Links
 
 - [Ethereum Documentation](https://ethereum.org/developers/)
 - [Hardhat Documentation](https://hardhat.org/docs)
 - [OpenZeppelin Contracts](https://docs.openzeppelin.com/contracts/)
 - [MetaMask Documentation](https://docs.metamask.io/)
 
-## 📞 Support
+## Support
 
 For questions and support:
 - Create an issue in the repository
