@@ -1,6 +1,6 @@
 # Decentralized Micro‑Lending DApp
 
-A decentralized peer-to-peer micro-lending platform built on Ethereum with Solidity smart contracts (Hardhat) and a modern React + Vite frontend using Ethers.js v6.
+A decentralized peer-to-peer micro-lending platform built on Ethereum with Solidity smart contracts (Hardhat) and a modern React + Vite frontend using Ethers.js v6
 
 ## Features
 
